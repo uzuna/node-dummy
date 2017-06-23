@@ -1,0 +1,17 @@
+{
+  "name": "dummy-package",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.js",
+    "lint": "eslint --fix src/**/*.js test/**/*.js",
+    "build": "rm -R lib/* && babel src -d lib",
+    "watch": "babel --watch=./src --out-dir=./lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
